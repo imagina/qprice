@@ -12,7 +12,23 @@ export default {
     title: 'iprice.cms.sidebar.adminZones',
     icon: 'fa-light fa-boxes-stacked',
     subHeader: {
-        refresh: true,
+      refresh: true,
+    }
+  },
+
+  tariffs: {
+    //permission: 'iprices.tariffs.manage',
+    activated: true,
+    authenticated: true,
+    path: '/price/tariffs/index',
+    name: 'qprice.admin.tariffs',
+    crud: import('modules/qprice/_crud/tariffs'),
+    page: () => import('modules/qcrud/_pages/admin/crudPage'),
+    layout: () => import('layouts/master.vue'),
+    title: 'iprice.cms.sidebar.adminTariffs',
+    icon: 'fa-light fa-boxes-stacked',
+    subHeader: {
+      refresh: true,
     }
   },
 

@@ -2,6 +2,7 @@ export default {
   moduleName: 'iprice',
   //Entities
   entityNames: {
-    zones: 'zones'
+    zones: 'zones',
+    tariffs: 'tariffs'
   },
 }

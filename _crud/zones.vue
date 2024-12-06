@@ -43,7 +43,6 @@ export default {
           },          
           filters: {
 						status: {
-							value: '1',
 							type: 'select',
 							isTranslatable: false,
 							props: {
@@ -98,7 +97,6 @@ export default {
 					status: {
             value: '1',
             type: 'select',
-            isTranslatable: false,
             props: {
               label: `${this.$tr('isite.cms.form.status')}*`,
               options: [
@@ -110,7 +108,6 @@ export default {
 					default: {
 						value: '',
 						type: 'input',
-						isTranslatable: true,
 						props: {
 							label: `${this.$tr('isite.cms.form.default')}*`,
 							rules: [
