@@ -7,7 +7,9 @@ export default {
       },      
       "label": {},
       "form": {
-      }
+      }, 
+      "newZone": "Nueva Zona",
+      "updateZone": "Actualizar Zona",
     }
   }
 }

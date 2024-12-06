@@ -14,7 +14,7 @@ export default {
         apiRoute: 'apiRoutes.qprice.zones',
         permission: 'iprice.zones',
         create: {
-          title: this.$tr('itask.cms.newTask'),
+          title: this.$tr('iprice.cms.newZone'),
         },
         read: {
           columns: [
@@ -30,10 +30,6 @@ export default {
             },
             {
               name: 'updated_at', label: this.$tr('isite.cms.form.updatedAt'), field: 'updatedAt', align: 'left',
-              format: val => val ? this.$trd(val) : '-',
-            },
-            {
-              name: 'deleted_at', label: this.$tr('itask.cms.form.deletedAt'), field: 'deletedAt', align: 'left',
               format: val => val ? this.$trd(val) : '-',
             },
             {name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'left'},
@@ -56,7 +52,7 @@ export default {
 					}
         },
         update: {
-          title: this.$tr('itask.cms.updateTask'),
+          title: this.$tr('iprice.cms.updateZone'),
         },
         delete: true,
         formLeft: {
@@ -79,10 +75,7 @@ export default {
             type: 'html',
 						isTranslatable: true,
             props: {
-              label: `${this.$tr('isite.cms.form.description')}*`,
-              rules: [
-                val => !!val || this.$tr('isite.cms.message.fieldRequired')
-              ],
+              label: this.$tr('isite.cms.form.description')
             }
           }					
         },
@@ -90,8 +83,9 @@ export default {
 					systemName: {
             value: '',            
             type: 'input',
+            required: true,
             props: {
-              label: this.$tr('isite.cms.form.systemName'),
+              label: `${this.$tr('isite.cms.form.systemName')}*`,
             }
           },
 					status: {
