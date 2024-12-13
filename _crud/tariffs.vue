@@ -12,7 +12,7 @@ export default {
 			return {
 				crudId: this.crudId,
 				apiRoute: 'apiRoutes.qprice.tariffs',
-				//permission: 'iprice.tariff',
+				permission: 'iprice.tariffs',
 				create: {
 					title: this.$tr('iprice.cms.newTariff'),
 				},

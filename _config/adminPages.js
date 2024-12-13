@@ -1,7 +1,7 @@
 
 export default {
   zones: {
-    //permission: 'iprices.zones.manage',
+    permission: 'iprices.zones.manage',
     activated: true,
     authenticated: true,
     path: '/price/zones/index',
@@ -17,7 +17,7 @@ export default {
   },
 
   tariffs: {
-    //permission: 'iprices.tariffs.manage',
+    permission: 'iprices.tariffs.manage',
     activated: true,
     authenticated: true,
     path: '/price/tariffs/index',
